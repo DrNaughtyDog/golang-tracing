@@ -61,8 +61,8 @@ image:
   repository: your-repo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "feature_monitoring"
-jaegerCollectorEndpoint: http://monitoring-tracing-jaeger-all-in-one.observability:14268
+  tag: "your-tag"
+jaegerCollectorEndpoint: http://jaeger-service-endpoint.namespace:14268
 debug: false
 
 imagePullSecrets:
