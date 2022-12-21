@@ -45,4 +45,4 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: |
-            ghcr.io/${{ github.repository }}/tracing-app:${{ env.RELEASE_VERSION }}
+            ghcr.io/${{ env.OWNER_LC }}/tracing-app:${{ env.RELEASE_VERSION }}
