@@ -15,7 +15,6 @@ metadata:
     app.kubernetes.io/name: {{ $k }}
     app.kubernetes.io/instance: {{ $k }}-{{ $.Release.Name }}
     app.kubernetes.io/version: {{ $.Chart.Version }}
-    app.kubernetes.io/component: {{ .type | default "passthrough" }}
     app.kubernetes.io/part-of: {{ $.Chart.Name }}
     app.kubernetes.io/managed-by: helm
 spec:
@@ -33,4 +32,3 @@ spec:
 {{- end }}
 {{- end }}
 {{- end }}
-...
