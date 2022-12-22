@@ -23,7 +23,7 @@ spec:
     name: {{ $k }}
     weight: 100
   port:
-    targetPort: {{ ($.service).port | default 80 }}
+    targetPort: {{ .route.port | default 80 }}
   tls:
     termination: passthrough
     insecureEdgeTerminationPolicy: Redirect

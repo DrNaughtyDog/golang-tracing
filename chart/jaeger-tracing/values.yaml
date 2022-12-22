@@ -24,6 +24,7 @@ services:
     route:
       annotations: {}
       host: your-host
+      port: http
     # ingress:
     #   className: "nginx"
     #   annotations: {}
